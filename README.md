@@ -29,3 +29,12 @@ Solution.lcs("132535365", "123456789") => returns "12356"
 - Return an empty string if there exists no common subsequence
 - Both arguments will have one or more characters (in JavaScript)
 - All tests will only have a single longest common subsequence. Don't worry about cases such as `LCS( "1234", "3412" )`, which would have two possible longest common subsequences: `"12"` and `"34"`.
+
+## Tests
+
+```
+@Test
+public void findLCSTest_3CharSubsequence_returnCorrectSubsequence() {
+	assertEquals("ab", LongestCommonSubsequence.findSubsequence("abc", "ab"));
+}
+```

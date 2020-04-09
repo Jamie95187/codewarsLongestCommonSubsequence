@@ -19,6 +19,6 @@ public class LongestCommonSubsequenceTest {
 	@Test
 	public void findLCSTest_3CharSubsequence_returnCorrectSubsequence() {
 		assertEquals("ab", LongestCommonSubsequence.findSubsequence("abc", "ab"));
+		assertEquals("bc", LongestCommonSubsequence.findSubsequence("abc", "bc"));
 	}
-
 }
