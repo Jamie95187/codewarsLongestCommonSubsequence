@@ -17,8 +17,13 @@ import org.junit.Test;
 public class LongestCommonSubsequenceTest {
 
 	@Test
-	public void findLCSTest_3CharSubsequence_returnCorrectSubsequence() {
+	public void findLCSTest_2CharSubsequence_returnCorrectSubsequence() {
 		assertEquals("ab", LongestCommonSubsequence.findSubsequence("abc", "ab"));
 		assertEquals("bc", LongestCommonSubsequence.findSubsequence("abc", "bc"));
+	}
+	
+	@Test
+	public void findLCSTest_3CharSubsequence_returnCorrectSubsequence() {
+		assertEquals("abd", LongestCommonSubsequence.findSubsequence("abcd", "abd"));
 	}
 }
