@@ -1,2 +1,3 @@
 module codewarsLongestCommonSequence {
+	requires junit;
 }

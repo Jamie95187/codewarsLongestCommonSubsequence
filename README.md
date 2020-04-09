@@ -1,4 +1,4 @@
-# Longest Common Sequence
+# Longest Common Sequence (5 KYU)
 
 Solving [this](https://www.codewars.com/kata/52756e5ad454534f220001ef/train/java) codewars challenge
 
@@ -20,7 +20,6 @@ Subsequences of `"abc"` = `"a"`,`"b"`,`"c`","`ab`",`"ac"`,`"bc"` and `"abc`".
 Solution.lcs("abcdef", "abc") => returns "abc"
 Solution.lcs("abcdef", "acf") => returns "acf"
 Solution.lcs("132535365", "123456789") => returns "12356"
-
 ```
 
 ### Notes
