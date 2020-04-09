@@ -34,7 +34,16 @@ Solution.lcs("132535365", "123456789") => returns "12356"
 
 ```
 @Test
-public void findLCSTest_3CharSubsequence_returnCorrectSubsequence() {
+public void findLCSTest_2CharSubsequence_returnCorrectSubsequence() {
 	assertEquals("ab", LongestCommonSubsequence.findSubsequence("abc", "ab"));
+	assertEquals("bc", LongestCommonSubsequence.findSubsequence("abc", "bc"));
+}
+
+@Test
+public void findLCSTest_3CharSubsequence_returnCorrectSubsequence() {
+	assertEquals("abd", LongestCommonSubsequence.findSubsequence("abcd", "abd"));
+	assertEquals("abd", LongestCommonSubsequence.findSubsequence("abbd", "abd"));
+	assertEquals("abc", LongestCommonSubsequence.findSubsequence("abcdef", "abc"));
+	assertEquals("acf", LongestCommonSubsequence.findSubsequence("abcdef", "acf"));
 }
 ```
