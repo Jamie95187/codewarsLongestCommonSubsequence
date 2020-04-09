@@ -30,4 +30,9 @@ public class LongestCommonSubsequenceTest {
 		assertEquals("acf", LongestCommonSubsequence.findSubsequence("abcdef", "acf"));
 	}
 	
+	@Test
+	public void findLCSTest_9CharSubsequence_returnCorrectSubsequence() {
+		assertEquals("12356", LongestCommonSubsequence.findSubsequence("132535365", "123456789"));
+	}
+	
 }
