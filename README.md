@@ -56,5 +56,10 @@ public void findLCSTest_9CharSubsequence_returnCorrectSubsequence() {
 public void findLCSTest_4CharSubsequence_returnCorrectSubsequence() {
 	assertEquals("34", LongestCommonSubsequence.findSubsequence("1234", "3412"));
 }
+
+@Test
+public void findLCSTest_final_returnCorrectSubsequence() {
+	assertEquals("final", LongestCommonSubsequence.findSubsequence("finaltest", "zzzfinallyzzz"));	
+}
 	
 ```

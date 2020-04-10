@@ -6,6 +6,14 @@ import java.util.Map;
 public class LongestCommonSubsequence {
 
 	static String findSubsequence(String input, String subsequence) {
+		if(input.length() < subsequence.length()) {
+			String oldSub = subsequence;
+			subsequence = input;
+			input = oldSub;
+		}
+		if(input.contentEquals(subsequence)) {
+			return subsequence;
+		}
 		HashMap <String, Integer> mapOfSequences = new HashMap<String, Integer>();
 		for(int i = 0; i < subsequence.length() - 1; i++) {
 			String commonSequence = "";
