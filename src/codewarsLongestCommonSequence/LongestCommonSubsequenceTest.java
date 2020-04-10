@@ -35,4 +35,9 @@ public class LongestCommonSubsequenceTest {
 		assertEquals("12356", LongestCommonSubsequence.findSubsequence("132535365", "123456789"));
 	}
 	
+	@Test
+	public void findLCSTest_4CharSubsequence_returnCorrectSubsequence() {
+		assertEquals("34", LongestCommonSubsequence.findSubsequence("1234", "3412"));
+	}
+	
 }

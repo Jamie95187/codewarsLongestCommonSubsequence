@@ -46,4 +46,15 @@ public void findLCSTest_3CharSubsequence_returnCorrectSubsequence() {
 	assertEquals("abc", LongestCommonSubsequence.findSubsequence("abcdef", "abc"));
 	assertEquals("acf", LongestCommonSubsequence.findSubsequence("abcdef", "acf"));
 }
+
+@Test
+public void findLCSTest_9CharSubsequence_returnCorrectSubsequence() {
+	assertEquals("12356", LongestCommonSubsequence.findSubsequence("132535365", "123456789"));
+}
+
+@Test
+public void findLCSTest_4CharSubsequence_returnCorrectSubsequence() {
+	assertEquals("34", LongestCommonSubsequence.findSubsequence("1234", "3412"));
+}
+	
 ```
